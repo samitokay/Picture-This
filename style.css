@@ -31,10 +31,28 @@ h4 {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.landscape-image {
+  display: block;
+}
+
+.square-image {
+  display: none;
 }
 
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .landscape-image {
+    display: none;
+  }
+
+  .square-image {
+    display: block;
   }
 }
